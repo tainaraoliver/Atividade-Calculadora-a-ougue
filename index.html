@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Compras</title>
+  <link rel="stylesheet" href="STYLE.CSS">
+</head>
+<body>
+  <h1>Calculadora de Compras</h1>
+  <form id="compraForm">
+    <label for="nomeCliente">Nome do Cliente:</label>
+    <input type="text" id="nomeCliente" required><br><br>
+    <label for="diaSemana">Dia da Semana (0 a 6, segunda a sábado):</label>
+    <input type="number" id="diaSemana" required min="0" max="6"><br><br>
+    <label for="carneBoi">Quantidade de Carne de Boi (kg):</label>
+    <input type="number" id="carneBoi" required min="0" step="0.1"><br><br>
+    <label for="carneFrango">Quantidade de Carne de Frango (kg):</label>
+    <input type="number" id="carneFrango" required min="0" step="0.1"><br><br>
+    <label for="linguica">Quantidade de Linguiça (kg):</label>
+    <input type="number" id="linguica" required min="0" step="0.1"><br><br>
+    <button type="submit">Calcular</button>
+  </form>
+  
+  <div id="resultado"></div><br>
+  
+  <label for="dias">Dia da Semana:</label>
+  <input type="number" id="dias" required><br><br>
+  <button type="button" onclick="exemplo()">Calcular</button>
+  <div id="resultado2"></div><br>
+  <script src="atv.js"></script>
+  
+</body>
+</html>
